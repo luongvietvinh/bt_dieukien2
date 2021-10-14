@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>
+<p>số tiền <input type="number" id="tien"></p></label>
+<hr>
+<label>
+<p>số tháng cho vay <input type="number" id="thang"> </p>
+</label>
+<button onclick="jav()">tính tiền</button>
+
+<script>
+    function jav (){
+       let a = document.getElementById("tien").value;
+       let b = document.getElementById("thang").value;
+        let lai1 = a * 1 / 10;
+        let lai2 = a * 1 / 9;
+        let lai3 = a * 1 / 7;
+            if (b > 3) {
+                document.write("tiền lãi là : " + lai2 )
+            }else if (b > 6) {
+                document.write("tiền lãi là : " + lai3 )
+            }else {
+                document.write("tiền lãi là :" + lai1)
+            }
+    }
+</script>
+</body>
+</html>
